@@ -1,5 +1,5 @@
 site:
-  name: BASCompanyProfile
+  name: Bina Anugerah Sukses
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: BASCompanyProfile
-    template: '%s — BASCompanyProfile'
+    default: Bina Anugerah Sukses
+    template: '%s — Bina Anugerah Sukses'
   description: "\U0001F680 Tech Company, IT Solutions, Small Business, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: BASCompanyProfile
+    site_name: Bina Anugerah Sukses
     images:
       - url: '~/assets/images/default.png'
         width: 1200
