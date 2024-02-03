@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: BASCompanyProfile
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: BASCompanyProfile
+    template: '%s — BASCompanyProfile'
+  description: "\U0001F680 Tech Company, IT Solutions, Small Business, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: BASCompanyProfile
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@binaa.sukses'
+    site: '@binaa.sukses'
     cardType: summary_large_image
 
 i18n:
