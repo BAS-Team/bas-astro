@@ -63,28 +63,6 @@ const postCollection = defineCollection({
   }),
 });
 
-const trainingCollection = defineCollection({
-  schema: z.object({
-    publishDate: z.date().optional(),
-    updateDate: z.date().optional(),
-    draft: z.boolean().optional(),
-
-    title: z.string(),
-    description: z.string().optional(),
-    image: z.string().optional(),
-
-    category: z.string().optional(),
-    mentor: z.string(),
-    mentorImage: z.string().optional(),
-
-    price: z.string(),
-    isDiscount: z.boolean(),
-    discount: z.number(),
-    priceAfterDisc: z.number(),
-  }),
-});
-
 export const collections = {
   post: postCollection,
-  training: trainingCollection,
 };

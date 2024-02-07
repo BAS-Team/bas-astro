@@ -3,8 +3,6 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
@@ -27,7 +25,7 @@ const metadata = {
         href: '#contact',
         icon: 'tabler:phone',
       },
-      { text: 'Pelajari Lebih Lanjut', href: '#features' },
+      { text: 'Pelajari Lebih Lanjut', href: '#services' },
     ]}
   >
     <Fragment slot="title">
@@ -48,7 +46,7 @@ const metadata = {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/dsTXcSeAZq8"
+          src="https://www.youtube.com/embed/1aOVOaTD7Ms?si=wXAoZ-IMSurIYFWO&"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
           allowfullscreen
@@ -62,48 +60,53 @@ const metadata = {
   <!-- About Us Section ************** -->
 
   <Features2
-    title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    title="Tentang Kami"
+    subtitle="Bina Anugerah Sukses, mitra terpercaya untuk solusi IT Anda. Sebagai perusahaan yang bergerak di bidang IT dengan pengalaman lebih dari 10 tahun, kami berkomitmen untuk membantu Anda mencapai tujuan bisnis Anda melalui solusi IT yang inovatif dan terdepan."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent" id="about"></div>
     </Fragment>
   </Features2>
 
-  <Stats
-    title="Discover the impressive impact of Astrowind"
-    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
-    stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
-      { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
-    ]}
-  />
-
   <!-- Service Section ****************** -->
   <div id="services">
     <Features2
-      title="What services do we provide?"
-      subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+      title="Layanan apa yang kami berikan ?"
+      subtitle="Kami menyediakan beberapa layanan untuk memenuhi kebutuhan bisnis anda, seperti pengembangan aplikasi, pemasangan perangkat keras, hingga manajemen media sosial bisnis anda."
       items={[
         {
-          title: 'Installation Instructions',
+          title: 'IT Consultant',
           description:
-            'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+            'Kami siap membantu Anda menganalisis kebutuhan IT dan memberikan solusi yang tepat sasaran, juga hemat biaya.',
           icon: 'flat-color-icons:document',
         },
         {
-          title: 'Demo and Previews',
+          title: 'Training Center',
           description:
-            'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
+            'Kami menyediakan berbagai program pelatihan IT yang dirancang untuk meningkatkan keterampilan dan pengetahuan Anda, juga karyawan Anda.  ',
           icon: 'flat-color-icons:template',
         },
         {
-          title: 'Technical Support',
+          title: 'Network Development',
           description:
-            'Providing customer support for any technical issues related to the templates or their implementation.',
+            'Kami merancang, membangun, dan memelihara jaringan komputer yang aman dan andal untuk bisnis Anda.',
+          icon: 'flat-color-icons:cell-phone',
+        },
+        {
+          title: 'Outsourcing IT',
+          description:
+            'Kami menyediakan staf IT profesional untuk membantu Anda mengelola infrastruktur IT Anda, sehingga Anda dapat fokus pada hal lain yang lebih penting.',
           icon: 'flat-color-icons:voice-presentation',
+        },
+        {
+          title: 'Software Development',
+          description: 'Kami membuat aplikasi perangkat lunak yang sesuai dengan kebutuhan dan anggaran Anda.',
+          icon: 'flat-color-icons:multiple-devices',
+        },
+        {
+          title: 'General Supplier',
+          description: 'Kami menyediakan berbagai macam produk IT, seperti Hardware hingga CCTV',
+          icon: 'flat-color-icons:shipped',
         },
       ]}
     >
@@ -116,88 +119,46 @@ const metadata = {
   <!-- Portofolio Section ****************** -->
   <div id="portfolio">
     <Brands
-      title="Partnerships & Collaborations"
-      subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+      title="Mitra & Kolaborasi"
+      subtitle="Kami sudah memiliki kerja sama dengan perusahaan ternama, untuk memberikan solusi yang terbaik."
       icons={[]}
       images={[
-        {
-          src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
-          alt: 'Paypal',
-        },
-        {
-          src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
-          alt: 'Visa',
-        },
-        {
-          src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
-          alt: 'Ebay',
-        },
-
-        {
-          src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
-          alt: 'Youtube',
-        },
         {
           src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
           alt: 'Microsoft',
         },
         {
-          src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-          alt: 'Node JS',
+          src: 'https://www.maedtra-tech.com/wp-content/uploads/2023/10/mikrotik-removebg-preview.png',
+          alt: 'Mikrotik',
         },
         {
-          src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
-          alt: 'Google',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/2560px-Cisco_logo_blue_2016.svg.png',
+          alt: 'Cisco',
         },
-        {
-          src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
-          alt: 'Meta',
-        },
-        {
-          src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
-          alt: 'Yahoo',
-        },
-      ]}
-    />
 
-    <Features
-      id="features"
-      title="Main features"
-      subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
-      columns={3}
-      items={[
         {
-          title: 'Modern and Professional Design',
-          description:
-            'Have a contemporary design that reflects current design trends and gives a professional impression.',
-          icon: 'tabler:artboard',
+          src: 'https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png',
+          alt: 'Oracle',
         },
         {
-          title: 'Responsive and Mobile-Friendly',
-          description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
-          icon: 'tabler:picture-in-picture',
+          src: 'https://cdn.techinasia.com/data/images/TbuCOvC8OiGyqoNekEVy9drAwcZlVL5u8ahGhS9X.png',
+          alt: 'Compnet',
         },
         {
-          title: 'Customizability',
-          description:
-            'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
-          icon: 'tabler:adjustments-horizontal',
+          src: 'https://www.pertamina.com/Media/Image/Pertamina.png',
+          alt: 'Pertamina',
         },
         {
-          title: 'Fast Loading Times',
-          description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
-          icon: 'tabler:rocket',
+          src: 'https://diabetes-indonesia.net/wp-content/uploads/2023/03/logo-dinkes-balikpapan.png',
+          alt: 'Diskes Balikpapan',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
-          description:
-            'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
-          icon: 'tabler:arrows-right-left',
+          src: 'https://www.lintasarta.net/wp-content/themes/lintasarta-theme/assets/img/logo.png',
+          alt: 'Lintasarta',
         },
         {
-          title: 'Compatibility',
-          description: 'The templates work seamlessly across various content management systems and website builders.',
-          icon: 'tabler:plug-connected',
+          src: 'https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-photos/bae3d56249aa1754fb16794b3f4893b1.png',
+          alt: 'Satnetcom',
         },
       ]}
     />
@@ -206,8 +167,8 @@ const metadata = {
   <!-- Contact Section ************** -->
   <div id="contact">
     <Features3
-      title="Let us know how we can help"
-      subtitle="We’re here to help and answer any question you might have."
+      title="Bagaimana kami bisa membantu bisnismu"
+      subtitle="Kami di sini untuk membantu dan menjawab pertanyaan apa pun yang Anda miliki."
       columns={4}
       items={[
         {
@@ -216,7 +177,7 @@ const metadata = {
           callToAction: {
             target: '_blank',
             text: 'Call us',
-            href: '/',
+            href: 'tel:+6285349828080',
             variant: 'link',
           },
         },
@@ -226,7 +187,7 @@ const metadata = {
           callToAction: {
             target: '_blank',
             text: 'Write to us',
-            href: '/',
+            href: 'mailto:admin@binaanugerahsukses.com',
             variant: 'link',
           },
         },
@@ -236,7 +197,7 @@ const metadata = {
           callToAction: {
             target: '_blank',
             text: 'Start chatting',
-            href: '/',
+            href: 'https://wa.me/6281528339901?text=Halo%20saya%20ingin%20berbicara%20dengan%20Admin%20BAS',
             variant: 'link',
           },
         },
@@ -246,7 +207,7 @@ const metadata = {
           callToAction: {
             target: '_blank',
             text: 'Start chatting',
-            href: '/',
+            href: 'https://wa.me/6281528339901?text=Halo%20saya%20mau%20berbicara%20dengan%20Support%20BAS',
             variant: 'link',
           },
         },

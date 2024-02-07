@@ -1,21 +1,21 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Home',
+      text: 'Beranda',
       href: getPermalink('/'),
     },
     {
-      text: 'About',
+      text: 'Tentang',
       href: '/#about',
     },
     {
-      text: 'Services',
+      text: 'Layanan',
       href: '/#services',
     },
     {
-      text: 'Portfolio',
+      text: 'Portofolio',
       href: '/#portfolio',
     },
     {
@@ -23,11 +23,11 @@ export const headerData = {
       href: getBlogPermalink('/'),
     },
     {
-      text: 'Contact',
+      text: 'Kontak',
       href: '/#contact',
     },
     {
-      text: 'Training',
+      text: 'Pelatihan',
       href: getPermalink('/training'),
     },
   ],
@@ -37,62 +37,56 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Social Media',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'TikTok', href: 'https://www.tiktok.com/@binaa.sukses' },
+        { text: 'Instagram', href: 'https://instagram.com/binaa.sukses' },
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/company/bina-anugerah-sukses' },
+        { text: 'Github', href: 'https://github.com/BAS-Team' },
+        { text: 'WhatsApp', href: 'https://api.whatsapp.com/send?phone=6281528339901' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Services',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Software Developer', },
+        { text: 'Network Engineer', },
+        { text: 'Outsourcing', },
+        { text: 'IT Consulting', },
+        { text: 'Certification', },
+        { text: 'General Supplier', },
+        { text: 'Training Center', },
       ],
     },
     {
       title: 'Support',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Network' },
+        { text: 'Software ', },
+        { text: 'Business & Marketing', },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About', href: '/#about' },
+        { text: 'Blog', href: getPermalink('/blog') },
+        { text: 'Trainings', href: getPermalink('/training') },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: '#' },
+    { text: 'Privacy Policy', href: '#' },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@binaa.sukses' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/binaa.sukses' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/BAS-Team' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/bina-anugerah-sukses/' },
+    { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: 'https://api.whatsapp.com/send?phone=6281528339901' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> Bina Anugerah Sukses</a> · All rights reserved.
+    Made by <a class="text-green-800 hover:underline dark:text-gray-200" href="https://onwidget.com/"> Bina Anugerah Sukses</a> · All rights reserved.
   `,
 };

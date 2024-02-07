@@ -41,6 +41,7 @@ export default defineConfig({
       include: {
         tabler: ['*'],
         'flat-color-icons': [
+          'cell-phone',
           'template',
           'gallery',
           'approval',
@@ -50,6 +51,8 @@ export default defineConfig({
           'voice-presentation',
           'business-contact',
           'database',
+          'multiple-devices',
+          'shipped',
         ],
       },
     }),
