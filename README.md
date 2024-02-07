@@ -275,3 +275,12 @@ Initially created by [onWidget](https://onwidget.com) and maintained by a commun
 ## License
 
 **AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+
+## This repo is deployed on netflify
+
+domain is served by cpanel binaanugerahsukses.com
+
+if want to restore domain to previous
+
+- binaanugerahsukses.com A 103.186.208.130
+- www.binaanugerahsukses.com CNAME binaanugerahsukses.com
