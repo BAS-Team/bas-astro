@@ -87,6 +87,6 @@ export const footerData = {
     { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: 'https://api.whatsapp.com/send?phone=6281528339901' },
   ],
   footNote: `
-    Made by <a class="text-green-800 hover:underline dark:text-gray-200" href="https://onwidget.com/"> Bina Anugerah Sukses</a> · All rights reserved.
+    Made by <a class="text-green-800 hover:underline dark:text-gray-200" href="https://binaanugerahsukses.com/"> Bina Anugerah Sukses</a> · All rights reserved.
   `,
 };
