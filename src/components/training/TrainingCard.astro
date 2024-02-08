@@ -1,13 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { getIdFormatDate } from '../../utils/utils';
-import { Image } from 'astro:assets';
 
 const { frontmatterData: data } = Astro.props;
 ---
 
 <div class="max-w-sm rounded-lg overflow-hidden shadow-lg dark:shadow-2xl dark:bg-green-950 dark:bg-opacity-50 m-4">
-  <Image width={500} height={240} src={data.image} alt="test" class="w-full rounded-tr-lg rounded-tl-lg" />
+  <img crossorigin="anonymous" src={data.image} alt="test" class="w-full rounded-tr-lg rounded-tl-lg" />
   <div class="px-6 py-4">
     <span class="text-sm">
       <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />

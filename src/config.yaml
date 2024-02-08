@@ -11,7 +11,7 @@ metadata:
   title:
     default: Bina Anugerah Sukses
     template: '%s — Bina Anugerah Sukses'
-  description: "\U0001F680 Tech Company, IT Solutions, Small Business, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Tech Company, IT Solutions, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
