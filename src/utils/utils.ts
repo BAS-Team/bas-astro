@@ -12,11 +12,12 @@ const formatter: Intl.DateTimeFormat =
 export const getFormattedDate = (date: Date): string => (date ? formatter.format(date) : '');
 
 export const getIdFormatDate = (date: Date): string =>
-  new Date(date).toLocaleDateString('id-ID', {
+  new Date(date).toLocaleString('id-ID', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   });
 
 export const trim = (str = '', ch?: string) => {

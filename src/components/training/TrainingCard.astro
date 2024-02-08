@@ -10,8 +10,8 @@ const { frontmatterData: data } = Astro.props;
   <div class="px-6 py-4">
     <span class="text-sm">
       <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-      <time datetime={String(data.publishDate)} class="inline-block dark:text-gray-400"
-        >{getIdFormatDate(data.publishDate)}</time
+      <time datetime={String(data.startingDate)} class="inline-block dark:text-gray-400"
+        >{getIdFormatDate(data.startingDate)}</time
       >
       {' '}
       ·{' '}
@@ -32,8 +32,21 @@ const { frontmatterData: data } = Astro.props;
     }
   </div>
   <div class="px-6 py-4 pb-2 mb-4">
-    <a href={data.urlRegister} target="_blank">
-      <button class="bg-green-800 bg-opacity-75 py-2 px-4 rounded-md text-white">Daftar Sekarang!</button>
-    </a>
+    {
+      data.isAvailable ? (
+        <a href={data.urlRegister} target="_blank">
+          <button class="bg-green-800 bg-opacity-75 py-2 px-4 rounded-md text-white">Daftar Sekarang!</button>
+        </a>
+      ) : (
+        <>
+          <button
+            class="bg-red-800 bg-opacity-75 py-2 px-4 rounded-md text-white hover:cursor-default"
+            title="Kemungkinan kelas sedang berlangsung"
+          >
+            Tidak Tersedia
+          </button>
+        </>
+      )
+    }
   </div>
 </div>

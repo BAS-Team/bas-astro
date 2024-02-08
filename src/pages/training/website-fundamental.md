@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/TrainingLayout.astro
-publishDate: 2024-01-06T00:00:00Z
+startingDate: 2024-02-07T00:00:00Z
 title: 'Pelatihan Website Fundamental'
 description: 'Pelatihan ini akan membantu kamu memahami dasar-dasar pembuatan website dengan HTML, CSS, dan JavaScript.'
 image: /trainings/images/flyer-website.jpg
@@ -14,6 +14,7 @@ discount: 90
 priceAfterDisc: 250000
 
 urlRegister: https://wa.me/6281528339901?text=Halo%20saya%20mau%20daftar%20pelatihan%20Website%20Fundamental
+isAvailable: false
 ---
 
 Pelatihan ini ditujukan kepada kamu yang ingin memahami dasar-dasar pembuatan website. Kamu akan mempelajari HTML, CSS, dan JavaScript. Pelatihan ini akan membantu kamu memahami dasar-dasar pembuatan website dengan HTML, CSS, dan JavaScript.
