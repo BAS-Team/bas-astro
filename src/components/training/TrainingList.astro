@@ -4,6 +4,6 @@ import TrainingCard from './TrainingCard.astro';
 const allTrainings = await Astro.glob('../../pages/training/*.md');
 ---
 
-<div class="mx-2 justify-center md:flex">
+<div class="mx-2 justify-center md:flex flex-wrap">
   {allTrainings.map((training) => <TrainingCard frontmatterData={training.frontmatter} url={training.url} />)}
 </div>
